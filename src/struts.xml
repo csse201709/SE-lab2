@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<!-- START SNIPPET: xworkSample -->
+<struts>
+    <package name="default"  extends="struts-default">
+    <action name="turntoinsertauthor" >
+            <result >/WEB-INF/insertauthor.jsp</result>
+        </action>
+        <action name="insertauthor" class="action.insertauthor" method="excute">
+            <result name="SUCCESS">/WEB-INF/insertauthor.jsp</result>
+        </action>
+        
+        
+        <action name="turntodeletebook" >
+            <result >/WEB-INF/deletebook.jsp</result>
+        </action>
+        <action name="deletebook" class="action.deletebook" method="delete_excute">
+            <result name="SUCCESS">/WEB-INF/deletebook.jsp</result>
+        </action>
+        
+        
+        <action name="turntoauthorsearch" >
+            <result>/WEB-INF/authorsearch.jsp</result>
+        </action>
+        <action name="authorsearch" class="action.authorsearch" method="excute">
+            <result>/WEB-INF/authorsearch.jsp</result>
+        </action>
+        
+        
+        <action name="turntoaddbook" >
+            <result>/WEB-INF/addbook.jsp</result>
+        </action> 
+        <action name="addbook" class="action.addbook" method="addbook_excute">
+            <result name="SUCCESS">/WEB-INF/addbook.jsp</result>
+        </action> 
+        
+        
+        <action name="turntodisplayall">
+            <result>/WEB-INF/displayall.jsp</result>
+        </action>  
+        
+        
+        <action name="returnfirstpage">
+            <result>/welcome.jsp</result>
+        </action>
+        
+        
+        <action name="turntousersearch">
+            <result>/WEB-INF/usersearch.jsp</result>
+        </action> 
+
+        
+        
+        <action name="turntoupdatabook" >
+            <result>/WEB-INF/updatabook.jsp</result>
+        </action> 
+        <action name="updatabook" class="action.updatabook" method="updatabook_excute">
+            <result name="SUCCESS">/WEB-INF/updatabook.jsp</result>
+        </action>                               
+    </package>
+</struts>
+<!-- END SNIPPET: xworkSample -->
